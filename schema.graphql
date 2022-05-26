@@ -1,0 +1,14 @@
+type Employee {
+  id: ID
+  firstName: String @fake(type: firstName, locale: tr)
+  lastName: String @fake(type: lastName, locale: tr)
+  phone: String @fake(type:phoneNumber)
+  image: String @fake(type:imageUrl)
+  rate: Int @examples(values: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10])
+  address: String @fake(type: streetAddress, options: { useFullAddress: true })
+  job:String  @examples(values: ["Frontend Dev", "Backend Dev", "Data Scientist", "IT Specialist", "HR Specialist"])
+}
+
+type Query {
+  employees: [Employee!] @listLength(min: 20, max: 25)
+}

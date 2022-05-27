@@ -44,6 +44,7 @@
     ]
   },
   "devDependencies": {
-    "graphql-faker": "^2.0.0-rc.25"
+    "graphql-faker": "^2.0.0-rc.25",
+    "sass": "^1.52.1"
   }
 }

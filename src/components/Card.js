@@ -8,7 +8,7 @@ const Card = ({ employee, handleVotes, order }) => {
   return (
     <Row className='card-container' align='middle' style={{ border: order > 2 ? '2px solid #FFB6C1' : '2px solid #32CD32'}}>
       <Col span={6} className='detail' onClick={()=>handleVotes(employee.id)}>
-        <img width='25px' src={employee.image} />
+        <img width='25px' src={employee.image} alt='profile picture'/>
       </Col>
       <Col span={8} className='detail' onClick={()=>handleVotes(employee.id)}>
         <Typography>{employee.firstName}&nbsp;{employee.lastName}</Typography>

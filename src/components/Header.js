@@ -8,7 +8,7 @@ const { Title } = Typography;
 const Header = () => {
     return (
         <Space className='header-space' style={{}}>
-            <img width="160px" src={Logo} />
+            <img width="160px" src={Logo} alt='logo'/>
             <Title level={1} className='header-text'> Staff of the Month List</Title>
         </Space>
     )

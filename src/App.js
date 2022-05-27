@@ -5,7 +5,6 @@ import { useDispatch } from 'react-redux'
 import { getEmployees } from './shared/Reducers';
 import Dashboard from './pages/Dashboard';
 import Header from './components/Header';
-import { EmployeesServiceInstance } from './shared/services/EmployeesService';
 
 function App() {
   const dispatch = useDispatch();

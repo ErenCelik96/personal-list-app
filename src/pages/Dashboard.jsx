@@ -20,7 +20,6 @@ const Dashboard = () => {
         setDetailPage(false);
     }
     
-    console.log(currentId)
     return (
         <>
             {status === 'success' ?
@@ -41,7 +40,6 @@ const Dashboard = () => {
                                 <DetailPage currentId={currentId} key={index} employee={employee} handleDetailPage={handleDetailPage}/>
                                 :
                                 null
-
                         ))
 
                     }

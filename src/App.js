@@ -12,7 +12,6 @@ function App() {
 
   React.useEffect(() => {
     dispatch(getEmployees())
-    // EmployeesServiceInstance.getEmployeeDetail('ODU3NjEwNDc0MQ==').then(res=>console.log(res))
   }, [dispatch]);
 
   return (

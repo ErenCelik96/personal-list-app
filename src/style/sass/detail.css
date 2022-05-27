@@ -1,0 +1,40 @@
+.detail-page-container {
+  width: 100%;
+  min-height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.detail-card {
+  background-image: linear-gradient(rgb(209, 188, 169), white);
+  width: 80%;
+  min-height: 50vh;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  padding-top: 30px;
+}
+
+.detail-page {
+  border-radius: 50%;
+}
+
+.detail-text {
+  color: #2f6d3d;
+  font-weight: bold;
+}
+
+.detail-back {
+  background-color: #20cc48;
+  color: white;
+  font-weight: bold;
+  border: none;
+  margin-bottom: 10px;
+}
+.detail-back:hover {
+  color: #20cc48;
+}
+
+/*# sourceMappingURL=detail.css.map */

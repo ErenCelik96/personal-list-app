@@ -1,0 +1,23 @@
+.card-container {
+  height: 70px;
+  border-radius: 12px;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.detail {
+  cursor: pointer;
+}
+
+.vote-button {
+  background-color: rgb(58, 204, 58);
+  border: none;
+  color: white;
+  font-weight: bold;
+}
+.vote-button:hover {
+  color: rgb(58, 204, 58);
+  font-weight: bold;
+}
+
+/*# sourceMappingURL=card.css.map */

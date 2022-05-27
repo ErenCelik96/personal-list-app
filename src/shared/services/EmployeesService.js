@@ -1,12 +1,12 @@
-import { QUERY } from "../Constants";
+import { TABLE_QUERY } from "../Constants";
 
 class EmployeesServices {
 
-    getEmployees = () => {
+    getAllEmployees = () => {
         return fetch('http://localhost:9002/graphql', {
             method: "POST",
             headers: { "Content-Type": "application/json" },
-            body: JSON.stringify({ query: QUERY })
+            body: JSON.stringify({ query: TABLE_QUERY })
         })
             .then(res => res.json())
     }

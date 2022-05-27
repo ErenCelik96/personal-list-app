@@ -3,24 +3,24 @@ import { EmployeesServiceInstance } from './services/EmployeesService'
 
 export const getEmployees = createAsyncThunk(
   'getEmployees', async () => {
-    return EmployeesServiceInstance.getEmployees();
+    return EmployeesServiceInstance.getAllEmployees();
   }
 )
 
 const initialState = {
   employees: [],
-  status: null,
+  status: null
 }
 
 export const employeesSlice = createSlice({
   name: 'employees',
-  initialState:initialState,
+  initialState: initialState,
   reducer: {},
   extraReducers: {
     [getEmployees.pending]: (state) => {
       state.status = 'loading'
     },
-    [getEmployees.fulfilled]: (state, payload, action) => {
+    [getEmployees.fulfilled]: (state, payload) => {
       state.employees = payload.payload.data.employees
       state.status = 'success'
     },
@@ -30,4 +30,5 @@ export const employeesSlice = createSlice({
   }
 })
 
+export const voteAction = employeesSlice.actions;
 export default employeesSlice.reducer;

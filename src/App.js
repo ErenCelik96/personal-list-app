@@ -1,23 +1,27 @@
 import './style/sass/App.scss';
 import 'antd/dist/antd.less';
+import React from 'react';
+import { useDispatch } from 'react-redux'
+import { getEmployees } from './shared/Reducers';
+import Dashboard from './pages/Dashboard';
+import Header from './components/Header';
+import { EmployeesServiceInstance } from './shared/services/EmployeesService';
 
 function App() {
+  const dispatch = useDispatch();
+
+  React.useEffect(() => {
+    dispatch(getEmployees())
+    // EmployeesServiceInstance.getEmployeeDetail('ODU3NjEwNDc0MQ==').then(res=>console.log(res))
+  }, [dispatch]);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Header />
+      <div className="App">
+        <Dashboard />
+      </div>
+    </>
   );
 }
 

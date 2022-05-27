@@ -1,7 +1,8 @@
 
-export const QUERY = `
+export const TABLE_QUERY = `
 {
     employees {
+      id
       firstName
       lastName
       address

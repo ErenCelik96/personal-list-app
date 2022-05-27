@@ -1,0 +1,17 @@
+.dashboard-container{
+    width: 60%; 
+    min-height: 80vh; 
+    background-color: #d1f7d8; 
+    border-radius: 15px; 
+    box-shadow: 2px 2px 2px 2px gray; 
+    padding: 20px;
+}
+
+.order-index{
+    display: flex; 
+    justify-content: center; 
+    align-items:center; 
+    padding-bottom:20px; 
+    font-size: 16px; 
+    font-weight: bold;
+}
